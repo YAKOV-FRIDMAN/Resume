@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="f35.css">
+    <script src="burger.js"></script>
+    <script src="https://kit.fontawesome.com/9c562b1b81.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- ראש האתר - לוגו -->
+    <header class="contaier_fluid">
+        <div class="container">
+            <div class="logo">
+            <img src="images/logonew.png">
+            </div>
+            <div class="burger">
+                <i class="fas fa-bars" id="id_btn" > </i>
+          
+              </div>
+            <nav  id="id_nav" >
+                <ul>
+                    <li><a href="#"> Home </a></li>
+                    <li><a href="#"> About </a></li>
+                    <li><a href="#"> Portfolio </a></li>
+                    <li><a href="#"> Contact Us </a></li>
+                    <li><a href="#"> App </a></li>
+                </ul>
+            </nav>
+                <div class="search">
+                    <form>
+                        <input placeholder="search" type="text" id="id_input_search">
+                        <button ><img src="images/glass.png"></button>
+                    </form>
+                </div>
+        </div>
+    </header>
+  <div class="strip contaier_fluid">
+    <div class="container">
+        <h1>Programming is an art that brings back war</h1>
+        <!-- <h2> אנחנו בונים את מערכות המחשב שלנו באותה הדרך בה אנו בונים ערים - לאורך זמן, ללא תוכנית ומעל להריסות</h2> -->
+    </div>
+  </div>
+    
+  <div class="blocks contaier_fluid">
+    <div class="container">
+        <div class="row">
+            <div class="box">
+
+              <h3>project bank</h3>
+                <div>
+                   <img src="images/record.png">
+                   <p>
+                    תהליך יצירת תוכניות עבור מחשב דיגיטלי הוא אטרקטיבי במיוחד, לא רק משום שהוא יכול להיות מתגמל מבחינה כלכלית ומבחינה מדעית, אלא גם בגלל שזה יכול להיות חוויה אסתטית ממש כמו שירה או מוסיקה
+                   </p>
+                   <a>clikc to show</a>
+                </div>
+            </div>
+        
+            <div class="box">
+
+                <h3>project bank</h3>
+                  <div>
+                     <img src="images/record.png">
+                     <p>
+                      תהליך יצירת תוכניות עבור מחשב דיגיטלי הוא אטרקטיבי במיוחד, לא רק משום שהוא יכול להיות מתגמל מבחינה כלכלית ומבחינה מדעית, אלא גם בגלל שזה יכול להיות חוויה אסתטית ממש כמו שירה או מוסיקה
+                     </p>
+                     <a>clikc to show</a>
+                  </div>
+              </div>
+
+              <div class="box">
+
+                <h3>project bank</h3>
+                  <div>
+                     <img src="images/record.png">
+                     <p>
+                      תהליך יצירת תוכניות עבור מחשב דיגיטלי הוא אטרקטיבי במיוחד, לא רק משום שהוא יכול להיות מתגמל מבחינה כלכלית ומבחינה מדעית, אלא גם בגלל שזה יכול להיות חוויה אסתטית ממש כמו שירה או מוסיקה
+                     </p>
+                     <a>clikc to show</a>
+                  </div>
+              </div>
+
+              <div class="box">
+
+                <h3>project bank</h3>
+                  <div>
+                     <img src="images/record.png">
+                     <p>
+                      תהליך יצירת תוכניות עבור מחשב דיגיטלי הוא אטרקטיבי במיוחד, לא רק משום שהוא יכול להיות מתגמל מבחינה כלכלית ומבחינה מדעית, אלא גם בגלל שזה יכול להיות חוויה אסתטית ממש כמו שירה או מוסיקה
+                     </p>
+                     <a>clikc to show</a>
+                  </div>
+              </div>
+        </div>
+         
+    </div>
+</div>
+<footer class="contaier_fluid">
+    <div class="container">
+
+    </div>
+</footer>
+</div>
+  <script>
+      BurgerBtn.choose();
+function name() {
+    const width  = window.innerWidth || document.documentElement.clientWidth || 
+document.body.clientWidth;
+const height = window.innerHeight|| document.documentElement.clientHeight|| 
+document.body.clientHeight;
+
+console.log(width, height);
+if(width > 730){
+    var nav = document.getElementById("id_nav");
+    nav.style.display = "block";
+    nav.style.display ="flex";
+    
+}
+else{
+    id_nav.style.display = "none";
+}
+}
+
+window.onresize = name;
+  </script>
+</body>
+</html>
