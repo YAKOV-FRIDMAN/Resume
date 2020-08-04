@@ -1,0 +1,200 @@
+*{
+    box-sizing: border-box;
+    outline: none;
+}
+body{
+    background-color: silver;
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+.contaier_fluid{
+    width: 100%;
+}
+header{
+    min-height: 100px;
+    background-color: white;
+    overflow: hidden;
+}
+.strip{
+    min-height: 300px;
+    background-color:  purple;
+     background-image: url(images/stripImge.webp);
+     background-size: cover; 
+     background-position: center ;
+     padding:  1px;
+     position: relative;
+    }
+.strip h1{
+    position: absolute;
+    bottom: 10px;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow: 3px 3px 3px #000;
+    padding: 0 10px;
+
+}
+.blocks{
+    min-height: 300px;
+    background-color: #ddd; 
+}
+footer{
+    min-height: 300px;
+    background-color: #333;
+}
+.container{
+    max-width: 1140px;
+    margin:0 auto;
+    /* border: 2px solid black; */
+    min-height: inherit;
+}
+header .logo{
+    max-width: 261px;
+    float: left;
+}
+header .logo img{
+    width:  100%;
+    max-width: 120px;
+    max-height: 100px;
+
+}
+header .burger{
+    float: right;
+    font-size: 2.6em;
+    line-height: 100px;
+    margin-right: 10px;
+    display: none;
+}
+header nav ul{
+    list-style-type:  none;
+    margin: 0;
+    padding: 0;
+}
+header nav li {
+    display: inline-block ;
+}
+#id_nav{
+    display: flex;
+}
+header nav{
+    /* display: block; */
+    float: left;
+    display: flex;
+    align-items: center;
+    min-height: 100px;
+}
+header nav a{
+    /* background-color:  gray; */
+    color:  gray;
+    text-decoration: none;
+    padding: 12px;
+    font-size:  1.2em;
+}
+header nav a:hover{
+    color:  deepskyblue;
+}
+header .search{
+ float:right;
+ display: flex;
+ align-items: center;
+ min-height: 100px;
+}
+header .search form{
+    border: 1px solid silver;
+    padding: 12px;
+    border-radius: 8px;
+}
+header .search input{
+    border:  0px solid black;
+}
+header .search button{
+    background-color:  transparent;
+    border:  0px solid black;
+}
+header .search button :active{
+     transform:  translate(0,2px);
+}
+.blocks .row{
+    width:  100%;
+    min-height: inherit;
+    overflow: hidden;
+    padding: 10px;
+    
+}
+.blocks .box{
+    width: 23%;
+    /* border: 1px solid black; */
+    min-height: 200px;
+    margin: 0 1%  ;
+    /* margin: 10px; */
+    float: left;
+}
+.blocks .box h3{
+    text-align:  center;
+    color:  white;
+    background-color:  deepskyblue;
+    margin: 0; 
+    padding:  16px 0;
+    border-bottom: 4px solid #4793b7;
+}
+.blocks .box > div{
+ width:  100%;
+ background-color: rgb(248, 248, 248);
+ min-height: 100px;
+ text-align: center;
+ padding: 16px;
+ border: 1px solid silver;
+}
+.blocks .box > div a{
+    color: deepskyblue;
+}
+/* @media screen and (min-width:721px){
+    header nav{
+        display: block;
+    }
+
+} */
+@media screen and (max-width:720px){
+    
+    header .burger{
+        display: block;
+    }
+    
+    header nav{
+    
+        display:  none;
+       position:  absolute;
+       background-color: rgba(255, 255, 255, 0.644);
+       width: 100%;
+       text-align: center;
+       z-index: 1;
+       right: 0;
+       border: 1px solid silver;
+       top:  100px;
+       
+       /* align-items: center; */
+     }
+
+       
+    header nav li{
+        display: block;
+        padding: 10px;
+        border-bottom: 1px solid gray;
+    }
+    header .search{
+        display: none;
+    }
+    
+    /* .blocks{
+        padding: 24px;
+    } */
+    .strip h1{
+        width:  100%;
+        text-align:  center;
+    }
+    .blocks .box{
+        width:  100%;
+        margin-bottom: 10px;
+    }
+
+}
