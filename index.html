@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="f35.css">
     <script src="burger.js"></script>
+    <script src="ixmixdrix.js"></script>
     <script src="https://kit.fontawesome.com/9c562b1b81.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
@@ -221,11 +222,11 @@
                         <button class="bute" >
                             <img src="images/github_logo.png" style="width: 150px; " >
                         </button>
-                        <button class="bute" >
+                        <button class="bute" id="demo" >
                             <img src="images/YouTube.png" style="width: 150px; " >
 
                         </button>
-                        <button class="bute" >
+                        <button class="bute"  id="demo" >
                             <img src="images/facebook.png" style="width: 150px; " >
 
                         </button>
@@ -233,8 +234,47 @@
                 </div>
                 
         </div>
-        <div class="row App" id="App">
+        <div class="App row " id="App">
             <h1>App</h1>
+            
+              
+            <div    >
+               <table  class="xo" >
+                   <tr  >
+                       <td>
+                           <button id="a1"></button>
+                       </td>
+                       <td>
+                           <button id="a2"></button>
+                       </td>
+                       <td>
+                          <button id="a3"></button>
+                       </td>
+                   </tr>
+                   <tr>
+                    <td>
+                        <button id="b1"></button>
+                    </td>
+                    <td>
+                        <button id="b2"></button>
+                    </td>
+                    <td>
+                       <button  id="b3"></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button  id="c1"></button>
+                    </td>
+                    <td>
+                        <button id="c2"></button>
+                    </td>
+                    <td>
+                       <button id="c3"></button>
+                    </td>
+                </tr>
+               </table>
+            </div>
         </div>
     </div>
 </div>
@@ -278,8 +318,26 @@
         window.onload = (event) => {
             console.log('page is fully loaded');
             name();
+
+
+           // xx();
         };
         window.onresize = name;
+    
+      // document.getElementById("demo").onclick = function() {myFunction()};
+            var aa = document.getElementsByTagName("button");
+        for (let index = 0; index < aa.length; index++) {
+            const element = aa[index];
+            console.log(element);
+            element.onclick = function(e) { myFunction(e) };
+        }
+
+
+// function myFunction(e) {
+//   alert(e)
+  
+       
+// }
   </script>
 </body>
 </html>
