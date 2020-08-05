@@ -22,11 +22,11 @@
               </div>
             <nav  id="id_nav" >
                 <ul>
-                    <li><a href="#"> Home </a></li>
-                    <li><a href="#"> About </a></li>
-                    <li><a href="#"> Portfolio </a></li>
-                    <li><a href="#"> Contact Us </a></li>
-                    <li><a href="#"> App </a></li>
+                    <li><a href="#home"> Home </a></li>
+                    <li><a href="#bout"> About </a></li>
+                    <li><a href="#Portfolio"> Portfolio </a></li>
+                    <li><a href="#Contact"> Contact Us </a></li>
+                    <li><a href="#App"> App </a></li>
                 </ul>
             </nav>
                 <div class="search">
@@ -52,7 +52,7 @@
     
   <div class="blocks contaier_fluid">
     <div class="container">
-        <div class="row">
+        <div class="row" id="home">
             <div class="box">
 
               <h3>project bank</h3>
@@ -101,9 +101,34 @@
                   </div>
               </div>
         </div>
-         <div class="row cabout">
-     
+         <div class="row cabout" id="bout">
+             <h1>About</h1>
+            <div class="cc">
+                <img src="images/about.webp" class="myimage1" >
+            </div class="cc">
+              <p>:אז קצת על עצמי
+                  <br>
+                 
+                  בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה
+                  <br>
+                  בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה
+
+                  <br>
+                  בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה
+
+
+               
+              </p>
+            <div>
+
+            </div>
          </div>
+         <div class="row Portfolio" id="Portfolio">
+        </div>
+        <div class="row Contact" id="Contact">
+        </div>
+        <div class="row App" id="App">
+        </div>
     </div>
 </div>
 <footer class="contaier_fluid">
@@ -114,25 +139,27 @@
 </div>
   <script>
       BurgerBtn.choose();
-function name() {
-    const width  = window.innerWidth || document.documentElement.clientWidth || 
-document.body.clientWidth;
-const height = window.innerHeight|| document.documentElement.clientHeight|| 
-document.body.clientHeight;
+        function name() {
+            const width  = window.innerWidth || document.documentElement.clientWidth || 
+            document.body.clientWidth;
+            const height = window.innerHeight|| document.documentElement.clientHeight|| 
+            document.body.clientHeight;
 
-console.log(width, height);
-if(width > 730){
-    var nav = document.getElementById("id_nav");
-    nav.style.display = "block";
-    nav.style.display ="flex";
-    
-}
-else{
-    id_nav.style.display = "none";
-}
-}
+            console.log(width, height);
+            if(width > 730){
+                var nav = document.getElementById("id_nav");
+                nav.style.display = "block";
+                nav.style.display ="flex";
+                
+            }
+            else{
+                var nav = document.getElementById("id_nav");
+                 nav.style.display = "none";
+                 nav.style.display ="flex";
+            }
+        }
 
-window.onresize = name;
+        window.onresize = name;
   </script>
 </body>
 </html>
