@@ -218,6 +218,38 @@ textarea{
     min-height: 120px;
     
 }
+.ccc{
+    text-align: center;
+}
+.bute{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(68, 190, 247);
+    border-radius: 90px 90px 90px 90px;
+-moz-border-radius: 90px 90px 90px 90px;
+-webkit-border-radius: 90px 90px 90px 90px;
+border: 0px solid #000000;
+}
+
+.bute:hover{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(24, 170, 238);
+    border-radius: 71px 71px 71px 71px;
+    -moz-border-radius: 71px 71px 71px 71px;
+    -webkit-border-radius: 71px 71px 71px 71px;
+    border: 7px solid #000000;
+}
+.bute:active{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(6, 117, 245);
+    border-radius: 71px 71px 71px 71px;
+    -moz-border-radius: 71px 71px 71px 71px;
+    -webkit-border-radius: 71px 71px 71px 71px;
+    border: 7px solid #4d1ef5;
+    transform:  translate(0,5px);
+}
 h4{
      
 
