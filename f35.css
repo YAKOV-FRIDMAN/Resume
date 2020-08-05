@@ -119,9 +119,9 @@ header nav ul{
 header nav li {
     display: inline-block ;
 }
-#id_nav{
+/* #id_nav{
     display: flex;
-}
+} */
 header nav{
     /* display: block; */
     float: left;
@@ -244,6 +244,7 @@ header .search button :active{
 
        
     header nav li{
+          display:  none;
         display: block;
         padding: 10px;
         border-bottom: 1px solid gray;

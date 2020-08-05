@@ -146,19 +146,32 @@
             document.body.clientHeight;
 
             console.log(width, height);
-            if(width > 730){
-                var nav = document.getElementById("id_nav");
-                nav.style.display = "block";
-                nav.style.display ="flex";
+            var wn = parseInt(width)
+            if(wn > 730){
+               // var navf=   document.getElementsByTagName("nav")
+                var navf = document.getElementById("id_nav");
+                // nav.style.display = "block";
+                // nav.style.display ="flex";
+               // navf.display = "block";
+               navf.style.display = "block";
+               navf.style.display = "flex";
                 
             }
             else{
-                var nav = document.getElementById("id_nav");
-                 nav.style.display = "none";
-                 nav.style.display ="flex";
+              //  var navf=   document.getElementsByTagName("nav")
+                var navf = document.getElementById("id_nav");
+                // nav.style.display = "none";
+                // nav.style.display ="flex";
+               navf.display = "none";
+            //    navf.style.color = "red";  
+               navf.style.display = "none";
+                console.log(width + "fggff");
             }
         }
-
+        window.onload = (event) => {
+            console.log('page is fully loaded');
+            name();
+        };
         window.onresize = name;
   </script>
 </body>
