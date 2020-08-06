@@ -39,10 +39,21 @@ function myFunction(e) {
             console.log(str.charAt(1));
             picece[2][Number(str.charAt(1)) -1] = strxo;
         }
-        console.log( xoo(picece));
-        if(xoo(picece)!= null){
-            alert("The winner of the game is:" +  xoo(picece))
+        var ga =  xoo(picece);
+        console.log( ga);
+        if(ga != null){
+            setTimeout(()=>{
+
+                alert("The winner of the game is:" + ga )
+                
+            },200)
+
+            setTimeout(()=>{
+
+                resetall();
+            },1000)
         }
+       
 
     }
     
@@ -137,14 +148,43 @@ function xoo(params) {
     else  if(params[0][2] == params[1][2] && params[1][2] == params[2][2] && params[0][2] != null){
         return params[0][2];
     }
-    
 
-
-    else{
-        return null;
+    else  if(params[0][0] == params[1][1] && params[1][1] == params[2][2] && params[0][0] != null){
+        return params[0][0];
     }
+
+    else  if(params[0][2] == params[1][1] && params[1][1] == params[2][0] && params[0][2] != null){
+        return params[0][2];
+    }
+
+
+    // else{
+    //     return null;
+    // }
 
 
     
 }
 
+function resetall() {
+
+   // console.log(picece);
+    for (let i = 0; i < picece.length; i++) {
+       for (let j = 0; j < picece.length; j++) {
+           
+        picece[i][j] = null;
+           
+       }  
+        
+    }
+
+    var aa = document.getElementsByTagName("button");
+    for (let index = 0; index < aa.length; index++) {
+        const element = aa[index];
+        if(element.id != ""){
+
+            element.innerText = "";
+        }
+        
+    }
+}
