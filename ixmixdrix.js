@@ -6,6 +6,12 @@ var picece =[
 ];
 function myFunction(e) {
    
+    var se = document.getElementById("select1");
+    
+    var strUser = se.options[se.selectedIndex].text;
+
+    
+
     
     var b = document.getElementById(e.target.id)
     var str = b.id;
@@ -38,6 +44,13 @@ function myFunction(e) {
         if(str.charAt(0)  == "c"){
             console.log(str.charAt(1));
             picece[2][Number(str.charAt(1)) -1] = strxo;
+        }
+        if(strUser == "Game against a friend"){
+
+        }
+        else{
+            bb = false;
+            gameByComputer();
         }
         var ga =  xoo(picece);
         console.log( ga);
@@ -156,6 +169,20 @@ function xoo(params) {
     else  if(params[0][2] == params[1][1] && params[1][1] == params[2][0] && params[0][2] != null){
         return params[0][2];
     }
+    else{
+        let bn = 0;
+            for (let i = 0; i < picece.length; i++) {
+                for (let j = 0; j < picece.length; j++) {
+                    if(picece[i][j] != null){
+                        bn+=1;
+                    }
+                }
+            }
+            if(bn ==9){
+                resetall();
+            }
+        
+    }
 
 
     // else{
@@ -164,6 +191,34 @@ function xoo(params) {
 
 
     
+}
+function gameByComputer() {
+    for (let i = 0; i < picece.length; i++) {
+        for (let j = 0; j < picece.length; j++) {
+            
+            if(picece[i][j] == null) {
+                picece[i][j] = "O";
+                var cc;
+                if(i == 0){
+                    cc = "a";
+                } 
+                else if(i == 1){
+                    cc = "b";
+                }
+                else if(i == 2){
+                    cc ="c";
+                }
+                let jj = j +1;
+                let strid = cc + jj.toString();
+                var bb = document.getElementById(strid);
+                bb.innerText = "O";
+                
+                return;
+            }
+            
+        }  
+         
+     }
 }
 
 function resetall() {
@@ -187,4 +242,5 @@ function resetall() {
         }
         
     }
+    bb = false;
 }
