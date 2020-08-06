@@ -222,11 +222,11 @@
                         <button class="bute" >
                             <img src="images/github_logo.png" style="width: 150px; " >
                         </button>
-                        <button class="bute" id="demo" >
+                        <button class="bute"   >
                             <img src="images/YouTube.png" style="width: 150px; " >
 
                         </button>
-                        <button class="bute"  id="demo" >
+                        <button class="bute"   >
                             <img src="images/facebook.png" style="width: 150px; " >
 
                         </button>
@@ -292,7 +292,7 @@
             const height = window.innerHeight|| document.documentElement.clientHeight|| 
             document.body.clientHeight;
 
-            console.log(width, height);
+           // console.log(width, height);
             var wn = parseInt(width)
             if(wn > 730){
                // var navf=   document.getElementsByTagName("nav")
@@ -312,7 +312,7 @@
                navf.display = "none";
             //    navf.style.color = "red";  
                navf.style.display = "none";
-                console.log(width + "fggff");
+              //  console.log(width + "fggff");
             }
         }
         window.onload = (event) => {
@@ -320,24 +320,20 @@
             name();
 
 
-           // xx();
+            
         };
         window.onresize = name;
     
-      // document.getElementById("demo").onclick = function() {myFunction()};
+      
             var aa = document.getElementsByTagName("button");
         for (let index = 0; index < aa.length; index++) {
             const element = aa[index];
-            console.log(element);
+            
             element.onclick = function(e) { myFunction(e) };
         }
 
 
-// function myFunction(e) {
-//   alert(e)
-  
-       
-// }
+ 
   </script>
 </body>
 </html>

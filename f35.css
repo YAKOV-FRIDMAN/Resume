@@ -88,12 +88,15 @@ header .logo img{
     /* margin: 10px; */
     float: left;
 }
+ p{
+    text-align:  right;
+}
 
  h1{
     text-align:  center;
 }
-p{
-    text-align: right;
+.box p{
+    text-align: center;
 }
 .myimage{
     width:  150%;
@@ -266,19 +269,21 @@ h4{
 }
 .xo{
 
+    padding: 100px;
       table-layout: fixed;
-       
+      background-position: center ;
         position: relative;
         left: 50%;
         transform: translateX(-50%);
-        /* z-index: -1; */
+        z-index: 1;
     display: inline-table  ;
     margin: auto;
     width: 50%;
     
-
+    background-size: cover; 
 
     width: 100%;
+    /* max-width: 500px; */
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -384,6 +389,9 @@ h4{
         height: 100px;
         font-size: 80px;
         
+   }
+   .xo{
+    padding: 1px;
    }
 
 }
